@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Home(props){
     return(
         <div>
@@ -9,7 +11,7 @@ export default function Home(props){
                         />
                     </div>
                     <li>
-                        <a href="#courses">Courses with flag {props.flag}</a>
+                        <a href="#courses"><h1>Courses with flag {props.flag}</h1></a>
                     </li>
                     <li>
                         <a href="#tutorials">Tutorials</a>
@@ -19,6 +21,9 @@ export default function Home(props){
                     </li>
                     <li>
                         <a href="#student">Student</a>
+                    </li>
+                    <li>
+                        <a href="./Login">Login</a>
                     </li>
                 </ul>
 

@@ -2,22 +2,28 @@ import { useState } from "react"
 
 export default function Counter(){
     const [count , setCount] = useState(0) ; 
-    const Increment= ()=>{
-        setCount(count+1 ) 
+    const [val , setVal] = useState(1) ;
+    const increment= ()=>{
+        setCount(count+val ) 
     }
     
-    const Decrement = ( ) => {
+    const decrement = ( ) => {
         if(count<=0)
             setCount(0)
         else
-            setCount(count - 1 )
+            setCount(count - val )
     }
     return(
         <>
             <h1>{count}</h1>
-            <button onClick={Increment}>Increment</button>
-            <button onClick={Decrement}>Decrement</button>
+            <button onClick={increment}>Increment</button>
+            <button onClick={decrement}>Decrement</button>
             
+            <h1>Value to be added or subtract: {val}</h1>
+            <button onClick={()=> setVal(val + 1 )}>Increment Value</button>
+            <button onClick={()=> setVal(val - 1 )}>Decrement Value</button>
+       
+       
         </>
     )
 }

@@ -2,6 +2,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  // Switch , 
 } from "react-router-dom";
 
 import ConditionalRenderer from './components/ConditionalRendering';
@@ -15,7 +16,8 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Message from './components/Message';
 import { useContext, useState } from "react";
-import UserContext from './components/Login'
+import HardWareData from "./components/HardWare";
+// import UserContext from './components/Login'
 // import Home from "./components/Home";
 // let temp = x ; 
 // import { flag } from "./components/Login";
@@ -29,22 +31,32 @@ function App() {
   return (
   
     <>
-    <button onClick={handleRequest}>Request</button>
-    {/* <Home flag={count}/>  */}
+    <Counter/>
+    {/* <button onClick={handleRequest}>Request</button>
+    <Home flag={count}/>   */}
+    {/* <Router>
+      <div>
+        <Switch>
 
-    <Router>
-      <Routes>
-        <Route
-
-        path='./components/Login'
-        element={<Login/>}
-      />
-        <Route
-          path='./components/Home'
-          element={<Home flag={count}/>}
-        />
-      </Routes>
-    </Router>
+            <Routes>
+              <Route
+              exact
+              path='./components/Message'
+              component={<Message/>}
+            />
+              <Route
+                path='./components/Login'
+                component={<Login/>}
+              />
+              
+              <Route
+                path='./components/HardWare'
+                component={<HardWareData/>}
+              />
+            </Routes>
+        </Switch>
+      </div>
+    </Router> */}
     {/* <h1>Hello from app</h1>
     {console.log(x)}
     {console.log(temp++)}
