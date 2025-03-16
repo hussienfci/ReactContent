@@ -1,11 +1,14 @@
+import styles from './hello.module.css'
+
+
 function Hello(){
     return <div>
         <h1> Hello world!  </h1>
         <h2>لعبة جاتا</h2>
-        <Car/>    
+        <Car brand={"Borcha"}/>    
         <Football/>
         <ArgFunc  name="Hussien" age = {25}/>
-        <HardWareData/>
+        {/* <HardWareData/> */}
 
         
     </div>
@@ -13,7 +16,7 @@ function Hello(){
 function Car(props){
     return(<>
         
-    <li><h2>Hello with Car with type {props.brand} ! </h2></li>
+    <li><h2 className={styles.header}>Hello with Car with type {props.brand} ! </h2></li>
     
     </>
     ) 

@@ -10,7 +10,7 @@ import Counter from './components/Counter';
 // import Fruits from './components/fruit';
 // // import HardWareData from './components/HardWare';
 // import {x , name } from './components/Hello'
-// import Hello  from './components/Hello'
+import Hello  from './components/Hello'
 // import Home from './components/Home';
 // // import ArgFunc from './components/Hello'
 // import Login from './components/Login';
@@ -23,8 +23,8 @@ import Counter from './components/Counter';
 // import { flag } from "./components/Login";
 import Form from "./components/Form";
 import Todo from "./components/ToDo";
-
-
+import InlineComponent from "./components/InlineStyle";
+import OutlineCSS from "./components/OutlineStyle";
 function App() {
   // let [count , setCount] = useState(0) ;
   // const handleRequest = ()=>{
@@ -33,14 +33,16 @@ function App() {
   return (
   
     <>
-    <Todo/>
+    <Hello/>
+    <InlineComponent/>
+    <OutlineCSS/>
+    {/* <Todo/>
     <Form />
-    <Counter/>
+    <Counter/> */}
     {/* <button onClick={handleRequest}>Request</button>
     <Home flag={count}/>   */}
     {/* <Router>
       <div>
-        <Switch>
 
             <Routes>
               <Route
@@ -58,7 +60,6 @@ function App() {
                 component={<HardWareData/>}
               />
             </Routes>
-        </Switch>
       </div>
     </Router> */}
     {/* <h1>Hello from app</h1>
