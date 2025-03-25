@@ -1,0 +1,33 @@
+.todoForm{
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 50px;
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+}
+
+.inputfield{
+    display: block;
+    width: 100%;
+    border: none;
+    color: #000;
+    font-size: 15px;
+}
+.inputField:focus{
+    outline: none;
+}
+
+.buttonSubmit{
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    background-color:rgb(29, 27, 27);
+    padding: 20px;
+    color: white;
+}
+
+.inputContainer{
+    display: flex;
+}

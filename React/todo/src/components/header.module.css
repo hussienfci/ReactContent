@@ -1,0 +1,10 @@
+.header{
+    background-color: rgb(29, 27, 27);
+    color: aliceblue;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    height: 100px;
+    padding-top: 30px;
+    box-shadow: 0 4px 6px rgba(105 , 103, 103, 0.2);
+}
